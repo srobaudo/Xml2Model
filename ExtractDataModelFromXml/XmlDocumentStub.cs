@@ -26,14 +26,10 @@ namespace ExtractDataModelFromXml
 <NotificationDefinition>
     <Paragraph>
         <Title>
-            <Resource Key = ""InvitationNotification_EnterpriseInvitation"" />
-
+            <Resource Key=""InvitationNotification_EnterpriseInvitation"" />
         </Title>
-
     </Paragraph>
-
     <Paragraph>
-
         <Resource Key=""InvitationNotification_YouHaveBeenInvited"" />
     </Paragraph>
     <Paragraph />
@@ -41,7 +37,7 @@ namespace ExtractDataModelFromXml
         <Row>
             <CellLeft>
                 <Bold>
-                    <Resource Key = ""NotificationDefinition_Name"" />
+                    <Resource Key=""NotificationDefinition_Name"" />
                 </Bold>
             </CellLeft>
             <CellRight>
@@ -55,7 +51,7 @@ namespace ExtractDataModelFromXml
                  </Bold>
              </CellLeft>
              <CellRight>
-                 <Data ID=""Email""> Administrator@daptiv.com</Data>
+                 <Data ID=""Email"">Administrator@daptiv.com</Data>
             </CellRight>
         </Row>
         <Row>
