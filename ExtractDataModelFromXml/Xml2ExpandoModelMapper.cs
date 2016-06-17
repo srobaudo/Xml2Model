@@ -10,15 +10,12 @@ namespace ExtractDataModelFromXml
         public dynamic Map(XmlDocument xml)
         {
             var dataElements = xml.GetElementsByTagName("Data")
-                .Cast<XmlNode>().Where(node => node.Attributes?["ID"] != null)
-                .ToDictionary(
-                    node => node.Attributes["ID"].InnerText,
-                    node => (object)node.InnerText);
+                .Cast<XmlNode>().Where(node => node.Attributes?["ID"] != null);
 
             var model = new ExpandoObject() as IDictionary<string, object>;
-            foreach (var element in dataElements)
+            foreach (var node in dataElements)
             {
-                model.Add(element);
+                model[node.Attributes["ID"].InnerText] = node.InnerText;
             }
 
             return model;
