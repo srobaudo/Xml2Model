@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Xml2ExpandoModelMapper.cs" />
     <Compile Include="Xml2Model.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,7 +57,7 @@
     <Compile Include="Model.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Xml2ModelMapper.cs" />
+    <Compile Include="Xml2DynamicModelMapper.cs" />
     <Compile Include="XmlDocumentStub.cs" />
     <EmbeddedResource Include="Xml2Model.resx">
       <DependentUpon>Xml2Model.cs</DependentUpon>

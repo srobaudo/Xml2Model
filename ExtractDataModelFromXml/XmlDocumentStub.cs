@@ -20,7 +20,6 @@ namespace ExtractDataModelFromXml
             }
         }
 
-
         private const string EnterpriseInvitationNotification = @"
 <?xml version=""1.0"" encoding=""utf-8""?>
 <NotificationDefinition>

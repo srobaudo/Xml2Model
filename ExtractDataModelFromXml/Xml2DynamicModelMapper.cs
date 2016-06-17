@@ -3,7 +3,7 @@ using System.Xml;
 
 namespace ExtractDataModelFromXml
 {
-    public class Xml2ModelMapper : IXml2ModelMapper
+    public class Xml2DynamicModelMapper : IXml2ModelMapper
     {
         public dynamic Map(XmlDocument xml)
         {
